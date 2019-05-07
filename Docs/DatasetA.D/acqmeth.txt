@@ -1,0 +1,158 @@
+                           INSTRUMENT CONTROL PARAMETERS:    GCMSD_2
+                           -----------------------------------------
+
+   D:\METHODS\PNNL_METABOLOMICS.M
+      Thu Jun 23 05:18:43 2016
+
+Control Information
+------- -----------
+
+Sample Inlet      :  GC
+Injection Source  :  GC ALS
+Mass Spectrometer :  Enabled
+
+
+ No Sample Prep method has been assigned to this method.
+
+Oven
+Equilibration Time                           1 min
+Max Temperature                              325 degrees C
+Slow Fan                                     Disabled
+Oven Program                                 On
+    60 蚓 for 1 min
+    then 10 蚓/min to 325 蚓 for 10 min
+Run Time                                     37.5 min
+1 min (Post Run)                             60 蚓
+Cryo                                         Off
+
+Front Injector
+Syringe Size                                 10 無
+Injection Volume                             1 無
+Solvent A Washes (PreInj)                    1
+Solvent A Washes (PostInj)                   1
+Solvent A Volume                             3 無
+Solvent B Washes (PreInj)                    1
+Solvent B Washes (PostInj)                   1
+Solvent B Volume                             3 無
+Sample Washes                                2
+Sample Wash Volume                           3 無
+Sample Pumps                                 2
+Dwell Time (PreInj)                          0 min
+Dwell Time (PostInj)                         0 min
+Solvent Wash Draw Speed                      300 無/min
+Solvent Wash Dispense Speed                  6000 無/min
+Sample Wash Draw Speed                       300 無/min
+Sample Wash Dispense Speed                   6000 無/min
+Injection Dispense Speed                     300 無/min
+Viscosity Delay                              1 sec
+Sample Depth                                 Disabled
+Injection Type                               Standard
+L1 Airgap                                    0.2 無
+
+Sample Overlap
+Sample overlap is not enabled
+
+Front SS Inlet He
+Mode                                         Splitless
+Heater                                       On    250 蚓
+Pressure                                     On    3.8341 psi
+Total Flow                                   On    53.653 mL/min
+Septum Purge Flow                            On    3 mL/min
+Gas Saver                                    On    20 mL/min After 2 min
+Purge Flow to Split Vent                     50 mL/min at 2 min
+
+Thermal Aux 2 (MSD Transfer Line)
+Heater                                       On
+Temperature Program                          On
+    280 蚓 for 0 min
+Run Time                                     37.5 min
+
+Column #1
+Agilent 19091S-433: 2378.41487
+HP-5MS  5% Phenyl Methyl Silox
+325 蚓: 30 m x 250 痠 x 0.25 痠
+In: Front SS Inlet He
+Out: Vacuum
+
+(Initial)                                    60 蚓
+Pressure                                     3.8341 psi
+Flow                                         0.65318 mL/min
+Average Velocity                             29.598 cm/sec
+Holdup Time                                  1.6893 min
+Flow Program                                 Off
+    0.65318 mL/min for 0 min
+Run Time                                     37.5 min
+1 min (Post Run)                             1 mL/min
+
+Signals
+Signal #1: None
+
+Signal #2: None
+
+Signal #3: None
+
+Signal #4: None
+
+                                MS ACQUISITION PARAMETERS
+
+
+General Information
+------- -----------
+
+Tune File                : atune.u
+Acquistion Mode          : Scan
+
+
+MS Information
+-- -----------
+
+Solvent Delay            : 6.00 min
+
+EMV Mode                 : Gain Factor
+Gain Factor              : 1.00
+Resulting EM Voltage     : 1659
+
+[Scan Parameters]
+
+Low Mass                 : 50.0
+High Mass                : 600.0
+Threshold                : 150
+Sample #                 : 2       A/D Samples    4
+
+[MSZones]
+
+MS Source                : 250 C   maximum 250 C
+MS Quad                  : 150 C   maximum 200 C
+
+
+                             END OF MS ACQUISITION PARAMETERS
+
+
+                              TUNE PARAMETERS for SN: US12243A03
+                        -----------------------------
+
+ Trace Ion Detection is OFF.
+
+ EMISSION    :      34.610
+ ENERGY      :      69.922
+ REPELLER    :      26.270
+ IONFOCUS    :      73.075
+ ENTRANCE_LE :      22.000
+ EMVOLTS     :    1470.588
+                               Actual EMV  :    1658.82
+                               GAIN FACTOR :       1.03
+ AMUGAIN     :    1288.000
+ AMUOFFSET   :     122.313
+ FILAMENT    :       1.000
+ DCPOLARITY  :       0.000
+ ENTLENSOFFS :      16.063
+ MASSGAIN    :   -1035.000   
+ MASSOFFSET  :     -40.000   
+
+                           END OF TUNE PARAMETERS
+                      ------------------------------------
+
+
+
+                              END OF INSTRUMENT CONTROL PARAMETERS
+                              ------------------------------------
