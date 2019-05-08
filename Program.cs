@@ -112,7 +112,7 @@ namespace FileContentUpdater
 
         private static void Processor_ErrorEvent(string message, Exception ex)
         {
-            ConsoleMsgUtils.ShowError(message, ex, false);
+            ConsoleMsgUtils.ShowErrorCustom(message, ex, false);
         }
 
         private static void Processor_StatusEvent(string message)
