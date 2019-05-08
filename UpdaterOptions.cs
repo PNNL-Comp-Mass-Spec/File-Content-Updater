@@ -10,7 +10,7 @@ namespace FileContentUpdater
         /// <summary>
         /// Program date
         /// </summary>
-        public const string PROGRAM_DATE = "May 7, 2019";
+        public const string PROGRAM_DATE = "May 8, 2019";
 
         #region "Properties"
 
@@ -92,23 +92,23 @@ namespace FileContentUpdater
         /// Validate the options
         /// </summary>
         /// <returns></returns>
-        public bool ValidateArgs()
+        public bool ValidateArgs(out string errorMessage)
         {
             if (string.IsNullOrWhiteSpace(DirectoryPath))
             {
-                Console.WriteLine("Use /I to specify the starting directory");
+                errorMessage = "Use /I to specify the starting directory";
                 return false;
             }
 
             if (string.IsNullOrWhiteSpace(InputFileNameFilter))
             {
-                Console.WriteLine("Use /F to specify the file name (or names) to process");
+                errorMessage = "Use /F to specify the file name (or names) to process";
                 return false;
             }
 
             if (string.IsNullOrWhiteSpace(SearchReplaceFilePath))
             {
-                Console.WriteLine("Use /T to specify the file with text to find and replacement text");
+                errorMessage = "Use /T to specify the file with text to find and replacement text";
                 return false;
             }
 
@@ -117,6 +117,8 @@ namespace FileContentUpdater
             {
                 InputFileNames.Add(filename);
             }
+
+            errorMessage = string.Empty;
 
             return true;
         }
