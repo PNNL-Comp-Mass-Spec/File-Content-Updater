@@ -23,8 +23,7 @@ namespace FileContentUpdater
                 ProgramInfo = "This program searches for files in a directory that match the specified name, " +
                               "then updates the files to find and replace text in the files.",
 
-                ContactInfo = "Program written by Matthew Monroe for the Department of Energy" + Environment.NewLine +
-                              "(PNNL, Richland, WA) in 2019" +
+                ContactInfo = "Program written by Matthew Monroe for the Department of Energy (PNNL, Richland, WA)" +
                               Environment.NewLine + Environment.NewLine +
                               "E-mail: matthew.monroe@pnnl.gov or proteomics@pnnl.gov" + Environment.NewLine +
                               "Website: https://github.com/PNNL-Comp-Mass-Spec/ or https://panomics.pnnl.gov/ or https://www.pnnl.gov/integrative-omics",
@@ -36,13 +35,19 @@ namespace FileContentUpdater
                     }
             };
 
-            var parseResults = parser.ParseArgs(args);
-            var options = parseResults.ParsedResults;
+            var result = parser.ParseArgs(args);
+            var options = result.ParsedResults;
 
             try
             {
-                if (!parseResults.Success)
+                if (!result.Success)
                 {
+                    if (parser.CreateParamFileProvided)
+                    {
+                        return 0;
+                    }
+
+                    // Delay for 1500 msec in case the user double clicked this file from within Windows Explorer (or started the program via a shortcut)
                     Thread.Sleep(1500);
                     return -1;
                 }
