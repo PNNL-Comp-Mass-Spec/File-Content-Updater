@@ -29,7 +29,7 @@ namespace FileContentUpdater
                               "(PNNL, Richland, WA) in 2019" +
                               Environment.NewLine + Environment.NewLine +
                               "E-mail: matthew.monroe@pnnl.gov or proteomics@pnnl.gov" + Environment.NewLine +
-                              "Website: https://panomics.pnnl.gov/ or https://omics.pnl.gov",
+                              "Website: https://github.com/PNNL-Comp-Mass-Spec/ or https://panomics.pnnl.gov/ or https://www.pnnl.gov/integrative-omics",
 
                 UsageExamples = {
                         exeName + @" C:\WorkDir /F:runstart.txt /T:SearchReplace.txt /Preview",

@@ -10,7 +10,7 @@ namespace FileContentUpdater
         /// <summary>
         /// Program date
         /// </summary>
-        public const string PROGRAM_DATE = "May 8, 2019";
+        public const string PROGRAM_DATE = "November 11, 2021";
 
         #region "Properties"
 
