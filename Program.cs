@@ -6,14 +6,13 @@ using System.Threading;
 
 namespace FileContentUpdater
 {
-    class Program
+    internal class Program
     {
 
         private static DateTime mLastProgressTime;
 
-        static int Main(string[] args)
+        private static int Main(string[] args)
         {
-
             mLastProgressTime = DateTime.UtcNow;
 
             var asmName = typeof(Program).GetTypeInfo().Assembly.GetName();
