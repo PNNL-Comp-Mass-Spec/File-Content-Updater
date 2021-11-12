@@ -75,7 +75,6 @@ namespace FileContentUpdater
                 OnErrorEvent("Error in ReadSearchReplaceFile", ex);
                 return searchReplaceList;
             }
-
         }
 
         /// <summary>
@@ -125,22 +124,18 @@ namespace FileContentUpdater
 
                 OnWarningEvent("Error processing " + searchDirectory.FullName);
                 return false;
-
             }
             catch (Exception ex)
             {
                 OnErrorEvent("Error in ReplaceTextInFiles", ex);
                 return false;
             }
-
         }
 
         private bool ReplaceTextInFiles(DirectoryInfo searchDirectory, ICollection<string> fileNamesToFind, Dictionary<string, string> searchReplaceList)
         {
-
             try
             {
-
                 // Find files to update
                 foreach (var fileNameSpec in fileNamesToFind)
                 {
@@ -172,7 +167,6 @@ namespace FileContentUpdater
                 OnErrorEvent("Error in ReplaceTextInFiles", ex);
                 return false;
             }
-
         }
 
         private bool ReplaceTextInFile(FileSystemInfo fileToUpdate, Dictionary<string, string> searchReplaceList)

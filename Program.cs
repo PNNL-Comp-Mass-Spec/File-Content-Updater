@@ -8,7 +8,6 @@ namespace FileContentUpdater
 {
     internal class Program
     {
-
         private static DateTime mLastProgressTime;
 
         private static int Main(string[] args)
@@ -61,7 +60,6 @@ namespace FileContentUpdater
                 }
 
                 options.OutputSetOptions();
-
             }
             catch (Exception e)
             {
@@ -93,7 +91,6 @@ namespace FileContentUpdater
                 ConsoleMsgUtils.ShowWarning("Processing error");
                 Thread.Sleep(2000);
                 return -1;
-
             }
             catch (Exception ex)
             {
@@ -101,7 +98,6 @@ namespace FileContentUpdater
                 Thread.Sleep(2000);
                 return -1;
             }
-
         }
 
         private static void Processor_DebugEvent(string message)

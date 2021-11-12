@@ -85,7 +85,6 @@ namespace FileContentUpdater
                 Console.WriteLine(" Previewing changes");
 
             Console.WriteLine();
-
         }
 
         /// <summary>
@@ -122,6 +121,5 @@ namespace FileContentUpdater
 
             return true;
         }
-
     }
 }
